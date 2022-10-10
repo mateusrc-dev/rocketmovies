@@ -4,8 +4,13 @@ export default {
     BACKGROUND_800: "#3E3B47",
     BACKGROUND_700: "#0D0C0F",
     BACKGROUND_600: "rgba(255, 133, 155, 0.05)",
+    BACKGROUND_500: "#282124",
+    BACKGROUND_400: "#312E38",
     WHITE: "#F4EDE8",
+    WHITE_100: "#E5E5E5",
+    WHITE_200: "#CAC4CF",
     PINK: "#FF859B",
+    PINK_100: "#FF509B",
     GRAY_100: "#948F99",
     GRAY_200: "#999591",
   }

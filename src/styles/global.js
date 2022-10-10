@@ -10,6 +10,17 @@ export default createGlobalStyle`
   body {
     background-color: ${({theme}) => theme.COLORS.BACKGROUND_900};
     color: ${({theme}) => theme.COLORS.WHITE};
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body, input, button, textarea {
+    font-family: 'Roboto Slab', serif;
+    outline: none;
+    font-size: 16px;
+  }
+
+  span {
+    font-family: 'Roboto', sans-serif;
   }
 
   a {
