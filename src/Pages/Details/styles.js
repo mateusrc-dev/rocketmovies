@@ -9,8 +9,10 @@ export const Container = styled.div`
   //grid-template-areas: "header" "contentOne" "contentTwo";
   .buttontext{
     display:flex;
+    justify-content: space-between;
     margin-top: 40px;
     margin-left: 120px;
+    margin-right: 125px;
     margin-bottom: 40px;
     //grid-area: contentOne;
   }
@@ -80,12 +82,7 @@ export const Content = styled.div`
         }
       }
     }
-    .tags {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      margin-bottom: 40px;
-    }
+    
     p {
       text-align: justify;
       color: ${({theme}) => theme.COLORS.WHITE};
@@ -94,3 +91,10 @@ export const Content = styled.div`
       line-height: 21px;
     }
 `;
+
+export const DivisionTwo = styled.div`
+    display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 40px;
+  `

@@ -7,7 +7,6 @@ export const Container = styled.div`
   background-color: ${({theme, isNew}) => isNew ? "transparent" : theme.COLORS.BACKGROUND_900}; //podemos usar a propriedade isNew no ternário, caso seja uma nota nova (true), o background vai ser transparente, caso contrário...
   color: ${({theme}) => theme.COLORS.GRAY_100}; 
   border: ${({theme, isNew}) => isNew ? `1px dashed ${theme.COLORS.GRAY_100}` : 'none'}; //aqui no caso vai novamente ser um ternário, se a nota for nota, vai aplicar a primeira configuração, caso contrário...
-  margin-bottom: 8px;
   border-radius: 10px;
   padding-right: 16px;
   button {
@@ -24,6 +23,7 @@ export const Container = styled.div`
   }
 
   input {
+    
     height: 56px;
     width: 100%;
     padding: 12px;

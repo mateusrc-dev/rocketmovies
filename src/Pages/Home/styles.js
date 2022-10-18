@@ -65,7 +65,7 @@ export const Button = styled.button`
   line-height: 21px;  
 `;
 
-export const ContainerTwo = styled.div`
+export const ContainerTwo = styled.a`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -76,16 +76,6 @@ export const ContainerTwo = styled.div`
   color: ${({theme}) => theme.COLORS.WHITE};
   border-radius: 16px;
   margin-bottom: 24px;
-  .tags {
-    display: flex;
-    gap: 8px;
-  }
-  .stars{
-      margin-top: 8px;
-      display: flex;
-      gap: 10px;
-      color: ${({theme}) => theme.COLORS.PINK};
-    }
     p {
       width: 100%;
       margin-top: 20px;
@@ -115,3 +105,60 @@ export const Tag = styled.span`
   text-align: center;
   padding: 8px 16px;
 `;
+
+export const Header = styled.header`
+  grid-area: header;
+  height: 116px;
+  width: 100%;
+  border-bottom-width: 1px; 
+  border-bottom-style: solid; 
+  border-bottom-color: ${({theme}) => theme.COLORS.BACKGROUND_800};
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 64px;
+  background-color: ${({theme}) => theme.COLORS.BACKGROUND_900};
+  padding: 0 123px;
+
+  h1 {
+    color: ${({theme}) => theme.COLORS.PINK};
+    font-weight: 700;
+    font-size: 24px;
+  }
+`;
+
+export const Profile = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+  }
+  div{
+    display:flex;
+    flex-direction: column;
+    text-align: right;
+    gap: 3px;
+  }
+
+  div strong{
+    white-space: nowrap; //para impedir que a linha quebre
+    color: ${({theme}) => theme.COLORS.WHITE};
+    font-size: 14px;
+    line-height: 18px;
+  }
+  div a{
+    color: ${({theme}) => theme.COLORS.GRAY_100};
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+  }
+`;
+
+export const DivisionTwo = styled.div`
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+  `

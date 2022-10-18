@@ -19,7 +19,7 @@ export const Form = styled.div`
   flex-direction: column;
   margin: 0 auto;
   gap: 8px;
-  div:nth-child(3) {
+  div:nth-child(4) {
     margin-top: 24px;
   }
   button{

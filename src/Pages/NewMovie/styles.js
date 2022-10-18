@@ -75,14 +75,12 @@ export const Section = styled.div`
     line-height: 26px;
   }
   .items{
+    padding: 16px;
     margin-bottom: 40px;
     display:flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 16px;
-    gap: 24px;
+    gap: 20px;
     width: 100%;
-    height: 88px;
+    min-height: 88px;
     background: ${({ theme }) => theme.COLORS.BACKGROUND_700};
     border-radius: 8px;
     flex-wrap: wrap;
