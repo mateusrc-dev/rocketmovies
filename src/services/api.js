@@ -1,4 +1,4 @@
 import axios from "axios"
 export const api = axios.create({
-  baseURL: "https://rocketmoviess.herokuapp.com/"
+  baseURL: "https://rocketmoviess.herokuapp.com"
 })

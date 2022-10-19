@@ -23,11 +23,11 @@ export function Profile() {
     const userUpdated = Object.assign(user, updated)
     await updateProfile({ user: userUpdated, avatarFile })
   }
-  function handleChangeAvatar(event) {
-    const file = event.target.files[0]
-    setAvatarFile(file)
-    const imagePreview = URL.createObjectURL(file)
-    setAvatar(imagePreview)
+  function handleChangeAvatar(event) {//essa função recebe event, que é o evento de alteração do avatar que vem da função onChange
+    const file = event.target.files[0] //dentro do evento vamos extrair o arquivo (no caso o arquivo na posição 0)
+    setAvatarFile(file) //vamos atualizar o estado do avatarFile com o arquivo que o usuário acabou de adicionar
+    const imagePreview = URL.createObjectURL(file); //criando uma URL pra atualizar o estado da variável 'avatar' que exibe o avatar
+    setAvatar(imagePreview) //atualizando o estado da variável 'avatar' com a URL criada
   }
   return (
     <Container>

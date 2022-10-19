@@ -27,10 +27,10 @@ function AuthProvider({ children }) {
   }
   async function updateProfile({ user, avatarFile }) {
     try {
-      if (avatarFile) {
-        const fileUploadForm = new FormData()
-        fileUploadForm.append("avatar", avatarFile)
-        const response = await api.patch("/users/avatar", fileUploadForm)
+      if (avatarFile){ //se existir um avatar (um arquivo selecionado) vai entrar nas chaves
+        const fileUploadForm = new FormData() //precisamos enviar ele como um arquivo
+        fileUploadForm.append("avatar", avatarFile); //o backend está esperando o arquivo numa aba chamada 'avatar'
+        const response = await api.patch("/users/avatar", fileUploadForm) //método patch pra poder fazer uma requisição pra atualizar um campo especifico na rota '/users/avatar'
         user.avatar = response.data.avatar
       }
       await api.put("/users", user)
