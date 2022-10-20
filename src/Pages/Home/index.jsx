@@ -22,7 +22,7 @@ export function Home() {
       const response = await api.get(`/notes/`)
       setMovies(response.data)
     }
-    fetchMovies()
+    fetchMoviesOne()
   useEffect(() => {
     async function fetchMovies() {
       const response = await api.get(`/notes/?title=${search}`)
