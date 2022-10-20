@@ -19,13 +19,6 @@ export function Home() {
   }
   useEffect(() => {
     async function fetchMovies() {
-      const response = await api.get(`/notes/`)
-      setMovies(response.data)
-    }
-    fetchMovies()
-  }, [])
-  useEffect(() => {
-    async function fetchMovies() {
       const response = await api.get(`/notes/?title=${search}`)
       setMovies(response.data)
     }
