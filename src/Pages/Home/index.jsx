@@ -18,11 +18,12 @@ export function Home() {
     navigate(`/details/${id}`)
   }
   useEffect(() => {
-    async function fetchMoviesOne() {
+    async function fetchMovies() {
       const response = await api.get(`/notes/`)
       setMovies(response.data)
     }
-    fetchMoviesOne()
+    fetchMovies()
+  }, [])
   useEffect(() => {
     async function fetchMovies() {
       const response = await api.get(`/notes/?title=${search}`)
